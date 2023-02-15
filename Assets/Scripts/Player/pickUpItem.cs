@@ -23,7 +23,6 @@ public class pickUpItem : MonoBehaviour
     {
         if(typeOfItem==itemType.coffee)
         {
-            //player.GetComponent<PlayerDamageControl>().currentHealth = player.GetComponent<PlayerDamageControl>().maxHealth;
             Destroy(gameObject);
         }
 
