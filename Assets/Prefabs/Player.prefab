@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 1257689596123045409}
   - component: {fileID: 2138947206279439972}
   - component: {fileID: 3829645809591353891}
+  - component: {fileID: 4087839780330997623}
   - component: {fileID: 2126426608}
   - component: {fileID: 2126426612}
   m_Layer: 0
@@ -512,6 +513,36 @@ MonoBehaviour:
   wpnLayer:
     serializedVersion: 2
     m_Bits: 1
+--- !u!114 &4087839780330997623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298811577642985541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9b3a7c90115514293574d4678d1605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+  timeInvincible: 1
+  animator: {fileID: 0}
+  rb2d: {fileID: 0}
+  strength: 16
+  delay: 0.15
+  OnBegin:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDone:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+  dead: 0
+  deathMenuUI: {fileID: 0}
 --- !u!50 &2126426608
 Rigidbody2D:
   serializedVersion: 4

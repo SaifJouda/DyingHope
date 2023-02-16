@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BlackScreenController : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class BlackScreenController : MonoBehaviour
     Animator animator;
 
     public Transform player;
+
+    float restartDelay=0;
+    bool died=false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +21,23 @@ public class BlackScreenController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.K) )//&& isRollCooldown==false)
         {
             animator.SetTrigger("fadeOut");
             transform.position = player.position;
         }
+        */
+        if(died==true) restartDelay++;
+        if(restartDelay>300) SceneManager.LoadScene("MainScene");
+    }
+
+    public void Died()
+    {
+        died=true;
+        animator.SetTrigger("fadeOut");
+        transform.position = player.position;
     }
 }
