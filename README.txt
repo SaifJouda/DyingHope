@@ -15,7 +15,7 @@ Basic controls and attack for the player
 Basic controls and attack for enemies
 Attack feedback (knockback and hit animation)
 Chest interaction
-Item pickups
+Item drops and pickups
 
 2D lighting
 Rain with collision physics and sound

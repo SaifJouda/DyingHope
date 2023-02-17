@@ -22,7 +22,7 @@ public class PlayerDamageControl : MonoBehaviour
 
     //knockback
     public Rigidbody2D rb2d;
-    float strength = 8, delay = 0.15f;
+    float strength = 4, delay = 0.15f;
     public UnityEvent OnBegin, OnDone,OnDead;
 
     public bool dead = false;
@@ -79,6 +79,7 @@ public class PlayerDamageControl : MonoBehaviour
     {
         Debug.Log("Player Died");
         //Death animation
+        animator.SetBool("died",true);
         animator.SetTrigger("dead");
         //Disable enemy
         //deathMenuUI.SetActive(true);

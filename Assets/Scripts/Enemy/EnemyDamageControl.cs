@@ -8,7 +8,7 @@ public class EnemyDamageControl : MonoBehaviour
     //General Stats
     public int maxHealth = 5;
     public int currentHealth;
-    public bool knockbackImmune=false;
+    public bool knockbackImmune=true;
     //public float timeInvincible = 2.0f;
     
     bool isInvincible;
@@ -18,7 +18,7 @@ public class EnemyDamageControl : MonoBehaviour
 
     //knockback
     public Rigidbody2D rb2d;
-    public float strength = 16, delay = 0.15f;
+    public float strength = 0, delay = 0.15f;
     public UnityEvent OnBegin, OnDone, OnDead;
 
     //public GameObject bonePrefab;

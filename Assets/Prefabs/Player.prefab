@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27865412}
   - component: {fileID: 27865413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948948379}
   - component: {fileID: 948948380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Studio_Project
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1341109280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1865872146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pickUpPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 4087839780330997623}
   - component: {fileID: 2126426608}
   - component: {fileID: 2126426612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1341109280}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   Damage: -1
   projectileGameObject: {fileID: 0}
   mainCam: {fileID: 0}
@@ -509,7 +509,7 @@ MonoBehaviour:
   pickRange: 1
   pickLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   wpnLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -530,17 +530,99 @@ MonoBehaviour:
   timeInvincible: 1
   animator: {fileID: 0}
   rb2d: {fileID: 0}
-  strength: 16
-  delay: 0.15
   OnBegin:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7499564613161110181}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDone:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7499564613161110181}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnDead:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7499564613161110181}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1257689596123045409}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4087839780330997623}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2138947206279439972}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: BlackScreenController, Assembly-CSharp
+        m_MethodName: Died
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dead: 0
   deathMenuUI: {fileID: 0}
 --- !u!50 &2126426608
@@ -597,6 +679,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298811577642985539}
     m_Modifications:
+    - target: {fileID: 326340501, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: autoUpdate
       value: 1
@@ -607,7 +693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: rainIntensity
-      value: 0.029
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: windIntensity
@@ -622,6 +708,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1637212423, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637212423, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -632,6 +722,10 @@ PrefabInstance:
     - target: {fileID: 2144878710566736527, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520605116634314040, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5520605116634314041, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_SortingOrder
@@ -653,6 +747,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5520605116980315703, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5520605116980315704, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_SortingOrder
       value: 10
@@ -661,6 +759,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5520605117174259812, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5520605117174259813, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_SortingOrder
       value: 10
@@ -668,6 +770,10 @@ PrefabInstance:
     - target: {fileID: 5520605117174259813, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520605117208042689, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5520605117208042690, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_SortingOrder
@@ -688,6 +794,10 @@ PrefabInstance:
     - target: {fileID: 5520605117869745959, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_Name
       value: Rain
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520605117869745959, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5520605117869745961, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_RootOrder
@@ -740,6 +850,10 @@ PrefabInstance:
     - target: {fileID: 8435234438484904348, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582913677854877617, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d484893fae264f4fac554213fbdb074, type: 3}

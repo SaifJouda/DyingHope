@@ -11,7 +11,7 @@ public class PlayerMelee : MonoBehaviour
     public Transform attackPoint;
     
     //Meelee Range
-    private float attackRange = 0.5f;
+    private float attackRange = 0.4f;
     private int attackDamage = -1;
     public LayerMask enemyLayers;
     //Value must be negative
@@ -25,7 +25,7 @@ public class PlayerMelee : MonoBehaviour
     Vector2 direction;
 
     //Attack Cooldown
-    private float attackCooldown = 1.0f;
+    private float attackCooldown = 0.5f;
     bool isAttackCooldown;
     float attackCooldownTimer;
 
@@ -35,6 +35,8 @@ public class PlayerMelee : MonoBehaviour
 
     //Melee Powerup
     private int damagePlus=0;
+
+    float attackDelay=0;
     
 
 
@@ -77,7 +79,7 @@ public class PlayerMelee : MonoBehaviour
     {
         //Attack animation
         animator.SetTrigger("attack");
-
+        
         //Detection
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
