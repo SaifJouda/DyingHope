@@ -31,6 +31,8 @@ public class MainController : MonoBehaviour
     bool isRollCooldown;
     float rollCooldownTimer;
 
+    public Transform jumpPoint;
+    public LayerMask groundLayer;
     
 
     
@@ -50,9 +52,15 @@ public class MainController : MonoBehaviour
         {
             Roll();
         }
-        if(Input.GetKeyDown(KeyCode.W) )//&& isRollCooldown==false)
+        if(Input.GetKeyDown(KeyCode.W))//&& isRollCooldown==false)
         {
-            Jump();
+            Collider2D[] grounds = Physics2D.OverlapCircleAll(jumpPoint.position, 0.1f, groundLayer);
+
+            foreach(Collider2D ground in grounds)
+            {
+                Jump();
+            }
+            //if(grounds.shapeCount >0) Jump();
         }
     }
 

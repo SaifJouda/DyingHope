@@ -22,7 +22,7 @@ public class Chest : MonoBehaviour
             animator.SetTrigger("open");
             waiter();
             GameObject coffeSpawned = Instantiate(coffeePrefab, transform.position + new Vector3(0,0.3f,0) ,transform.rotation);
-            coffeSpawned.GetComponent<Rigidbody2D>().velocity=new Vector2(Random.Range(-1.0f, 1.0f),Random.Range(2.0f, 5.0f));
+            coffeSpawned.GetComponent<Rigidbody2D>().velocity=new Vector2(Random.Range(-1.0f, 1.0f),Random.Range(2.0f, 3.0f));
             opened = true;
         }
         
