@@ -2,7 +2,11 @@ Saif Jouda
 DyingHope Prototype:
 
 ***Installation and Execution***
-No special requirements, simply run the .exe, feel free to email me if you have any questions
+This game was made with Unity version 2021.3.9f1
+The "Build" file contains everything required to execute and play the game. Simply run the .exe file to launch the game.
+The other files are there if you want to open it in Unity
+
+Feel free to contact me if you have any questions
 
 ***Controls***
 Start: The character will be laying on the ground when you begin, press [Space] to get up
