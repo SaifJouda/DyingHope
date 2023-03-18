@@ -54,11 +54,11 @@ public class PlayerDamageControl : MonoBehaviour
         if (amount < 0)
         {
             //GetComponent<FlashControl>().Flash();
-            animator.SetTrigger("hit");
             
             if (isInvincible)
                 return;
             
+            animator.SetTrigger("hit");
             isInvincible = true;
             invincibleTimer = timeInvincible;
             
@@ -92,11 +92,16 @@ public class PlayerDamageControl : MonoBehaviour
     }
     
 
+    public void rollInvin()
+    {
+        isInvincible = true;
+        invincibleTimer = timeInvincible;
+    }
 
     //Knockback,  modified code from: https://www.youtube.com/watch?v=RXhTD8YZnY4
     public void PlayFeedback(GameObject sender)
     {
-        if(currentHealth<=0)
+        if(currentHealth<=0 || isInvincible)
             return;
         StopAllCoroutines();
         OnBegin?.Invoke();

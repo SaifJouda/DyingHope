@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainController : MonoBehaviour
 {
     //General Stats
-    public float speed = 1.0f;
+    public float speed = 0.75f;
     public float jumpVelocity = 3f;
 
     //Position
@@ -88,7 +88,11 @@ public class MainController : MonoBehaviour
         {
             rollCooldownTimer -= Time.deltaTime;
             if (rollCooldownTimer <= 0)
+            {
                 isRollCooldown = false;
+           
+                speed*=2f/3f;
+            }
         }
         
         if(horizontal <0 && !faceRight)
@@ -110,9 +114,10 @@ public class MainController : MonoBehaviour
     void Roll()
     {
         animator.SetTrigger("roll");
-
+        GetComponent<PlayerDamageControl>().rollInvin();
         isRollCooldown=true;
         rollCooldownTimer=rollCooldown;
+        speed*=1.5f;
     }
 
     void Flip()

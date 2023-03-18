@@ -23,6 +23,7 @@ public class pickUpItem : MonoBehaviour
     {
         if(typeOfItem==itemType.coffee)
         {
+            player.GetComponent<PlayerDamageControl>().ChangeHealth(1);
             Destroy(gameObject);
         }
 
