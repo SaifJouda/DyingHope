@@ -65,11 +65,21 @@ public class PlayerDamageControl : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        GetComponent<PlayerSoundController>().updateAudio(currentHealth,maxHealth);
 
         if(currentHealth<=0)
         {
             dead=true;
             Die();
+        }
+
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GetComponent<PlayerSoundController>().updateAudio(currentHealth,maxHealth);
         }
 
     }

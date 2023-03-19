@@ -74122,11 +74122,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &251200297 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1515494682024185154, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
-  m_PrefabInstance: {fileID: 1298811577802600327}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &252104551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3564026850829729314, guid: ed925410cd097664ea4b9e3e758f02a4, type: 3}
@@ -74694,6 +74689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed925410cd097664ea4b9e3e758f02a4, type: 3}
+--- !u!82 &314756597 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 314756597, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+  m_PrefabInstance: {fileID: 1298811577802600327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &321776720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3564026850829729314, guid: 70e4f80265d902443a6249697d613d81, type: 3}
@@ -76946,6 +76946,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+--- !u!82 &574668073 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 574668073, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+  m_PrefabInstance: {fileID: 1298811577802600327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &575572571
 GameObject:
   m_ObjectHideFlags: 0
@@ -88330,14 +88335,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
-      propertyPath: RainIntensity
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11475408, guid: b046278bb9b6e104790392b566667ba5, type: 3}
-      propertyPath: CollisionLifeTimeRain
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b046278bb9b6e104790392b566667ba5, type: 3}
 --- !u!1001 &1883663148
@@ -90275,6 +90272,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 314756597, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 948948378, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+      propertyPath: m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 986137656732084808, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+      propertyPath: heart
+      value: 
+      objectReference: {fileID: 574668073}
+    - target: {fileID: 986137656732084808, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+      propertyPath: breath
+      value: 
+      objectReference: {fileID: 314756597}
     - target: {fileID: 1257689596123045409, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
       propertyPath: mainCam
       value: 
@@ -90327,24 +90340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1515494682024185154, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.365
-      objectReference: {fileID: 0}
     - target: {fileID: 4087839780330997623, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
       propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 2101729022}
-    - target: {fileID: 7499564613161110181, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
-      propertyPath: jumpPoint
-      value: 
-      objectReference: {fileID: 251200297}
-    - target: {fileID: 7499564613161110181, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 742692216525114596, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50110a819ac8ca04baf03075e17e2b44, type: 3}
 --- !u!1001 &7280106524396491160
 PrefabInstance:
