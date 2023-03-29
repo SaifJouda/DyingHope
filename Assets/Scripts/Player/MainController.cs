@@ -34,7 +34,8 @@ public class MainController : MonoBehaviour
     public Transform jumpPoint;
     public LayerMask groundLayer;
     
-
+    private bool inAir=false;
+    
     
     
     // Start is called before the first frame update
@@ -54,12 +55,14 @@ public class MainController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.W))//&& isRollCooldown==false)
         {
+            /*
             Collider2D[] grounds = Physics2D.OverlapCircleAll(jumpPoint.position, 0.1f, groundLayer);
 
             foreach(Collider2D ground in grounds)
             {
                 Jump();
-            }
+            }*/
+            if(inAir==false) Jump();
             //if(grounds.shapeCount >0) Jump();
         }
     }
@@ -68,7 +71,18 @@ public class MainController : MonoBehaviour
     void FixedUpdate()
     {
 
-        
+        Collider2D[] grounds = Physics2D.OverlapCircleAll(jumpPoint.position, 0.1f, groundLayer);
+       if(grounds.Length>0)
+        {
+            inAir=false;
+            animator.SetBool("midair",false);
+        }
+        else
+        {
+            inAir=true;
+            animator.SetBool("midair",true);
+        }
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
