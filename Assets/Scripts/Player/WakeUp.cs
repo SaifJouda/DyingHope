@@ -32,6 +32,7 @@ public class WakeUp : MonoBehaviour
         {
             sleeping=false;
             animator.SetTrigger("wake");
+            GetComponent<PlayerSoundController>().updateAudio(5,5);
         }
     }
 

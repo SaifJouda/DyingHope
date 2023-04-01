@@ -37,6 +37,7 @@ public class PlayerMelee : MonoBehaviour
     private int damagePlus=0;
 
     float attackDelay=0;
+    private int attackCount=0;
     
 
 
@@ -56,7 +57,7 @@ public class PlayerMelee : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isAttackCooldown==false)
+        if(Input.GetKey(KeyCode.Space) && isAttackCooldown==false)
         {
             Attack();
         }
@@ -78,7 +79,11 @@ public class PlayerMelee : MonoBehaviour
     void Attack()
     {
         //Attack animation
+        animator.SetInteger("attackCounter",attackCount);
         animator.SetTrigger("attack");
+        
+        if(attackCount>=4) attackCount=0;
+        else attackCount++;
         
         //Detection
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

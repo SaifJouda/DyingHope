@@ -14255,7 +14255,7 @@ MonoBehaviour:
   RainSoundMedium: {fileID: 8300000, guid: 3359e9d10af08ca46ae396298dbd1ed9, type: 3}
   RainSoundHeavy: {fileID: 8300000, guid: db1471092e49b7445bfbd374a17ea61a, type: 3}
   RainSoundAudioMixer: {fileID: 0}
-  RainIntensity: 0
+  RainIntensity: 0.5
   RainFallParticleSystem: {fileID: 19804216}
   RainExplosionParticleSystem: {fileID: 19837776}
   RainMistParticleSystem: {fileID: 19862954}
@@ -14271,5 +14271,5 @@ MonoBehaviour:
   CollisionMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  CollisionLifeTimeRain: 0.02
+  CollisionLifeTimeRain: 0
   RainMistCollisionMultiplier: 0.75

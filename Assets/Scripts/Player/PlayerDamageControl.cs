@@ -54,22 +54,32 @@ public class PlayerDamageControl : MonoBehaviour
         if (amount < 0)
         {
             //GetComponent<FlashControl>().Flash();
-            animator.SetTrigger("hit");
             
             if (isInvincible)
                 return;
             
+            animator.SetTrigger("hit");
             isInvincible = true;
             invincibleTimer = timeInvincible;
             
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        GetComponent<PlayerSoundController>().updateAudio(currentHealth,maxHealth);
 
         if(currentHealth<=0)
         {
             dead=true;
             Die();
+        }
+
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GetComponent<PlayerSoundController>().updateAudio(currentHealth,maxHealth);
         }
 
     }
@@ -92,11 +102,16 @@ public class PlayerDamageControl : MonoBehaviour
     }
     
 
+    public void rollInvin()
+    {
+        isInvincible = true;
+        invincibleTimer = timeInvincible;
+    }
 
     //Knockback,  modified code from: https://www.youtube.com/watch?v=RXhTD8YZnY4
     public void PlayFeedback(GameObject sender)
     {
-        if(currentHealth<=0)
+        if(currentHealth<=0 || isInvincible)
             return;
         StopAllCoroutines();
         OnBegin?.Invoke();

@@ -153,8 +153,8 @@ public class MeleeEnemyController : MonoBehaviour
             //Damage
             foreach(Collider2D enemy in hitEnemies)
             {
-                enemy.GetComponent<PlayerDamageControl>().ChangeHealth(-1);
                 enemy.GetComponent<PlayerDamageControl>().PlayFeedback(gameObject);
+                enemy.GetComponent<PlayerDamageControl>().ChangeHealth(-1);
             }
             attackDelayTimer=0f;
         }
