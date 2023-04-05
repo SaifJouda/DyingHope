@@ -843,6 +843,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (11)
@@ -74547,6 +74555,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1
@@ -74852,6 +74868,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (9)
@@ -76741,6 +76765,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (10)
@@ -78014,6 +78046,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (1)
@@ -79802,6 +79842,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (2)
@@ -84837,6 +84885,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (6)
@@ -86814,6 +86870,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (5)
@@ -88525,6 +88589,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (3)
@@ -89623,6 +89695,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (8)
@@ -90762,6 +90842,74 @@ Transform:
   m_Father: {fileID: 1491592420}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1808179858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808179861}
+  - component: {fileID: 1808179860}
+  - component: {fileID: 1808179859}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1808179859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808179858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1808179860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808179858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1808179861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808179858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1813846738 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3564026850829729314, guid: ed925410cd097664ea4b9e3e758f02a4, type: 3}
@@ -90888,6 +91036,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (7)
@@ -91591,6 +91747,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 8956839531948587529, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: m_Name
       value: enemy1 (12)
@@ -93371,6 +93535,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2057774108}
     m_Modifications:
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: itemDrop
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
+    - target: {fileID: 759055365217004849, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
+      propertyPath: chickenPrefab
+      value: 
+      objectReference: {fileID: 1791559835793718288, guid: 09460e9637102574cb20ecc46065898d, type: 3}
     - target: {fileID: 6163021611983234531, guid: 8eae945f1f7f5f9479eed8c999ca937d, type: 3}
       propertyPath: attackRange
       value: 0.4
