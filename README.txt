@@ -24,6 +24,17 @@ Basic controls and attack for enemies
 Attack feedback (knockback and hit animation)
 Chest interaction
 Item drops and pickups
+Powerup/health pickup
+Powerup pickup text
+Powerup drop from enemies
+Powerup bounce physics
+Rolling
+Different attack animations
+Level design
+Fire
+Sound effects (heartbeat, breathing) show players health (increase in volume and speed the lower the health)
+Tutorial keys
+
 
 2D lighting
 Rain with collision physics and sound
@@ -34,6 +45,7 @@ Ambient music
 Fade in and out effect for smooth entrance and restart (when the player dies)
 
 
+
 ***References for assets used***
 Background:
 Gothicvania Town - Ansimuz
@@ -41,4 +53,6 @@ Characters:
 Hero and Opponents Animation - Szadi Art.
 Props:
 Pixel Art Platformer - Village Props - Cainos
+Keyboard Key:
+Pixel Keyboard Keys - for UI
 
