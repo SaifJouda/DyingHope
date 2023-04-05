@@ -75,6 +75,11 @@ public class PlayerDamageControl : MonoBehaviour
 
     }
 
+    public void IncreaseHealth(int amount)
+    {
+        maxHealth += amount;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.P))

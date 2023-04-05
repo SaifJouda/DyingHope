@@ -15,6 +15,7 @@ public class EnemyDamageControl : MonoBehaviour
     float invincibleTimer;
 
     public Animator animator;
+    private Collider2D coll;
 
     //knockback
     public Rigidbody2D rb2d;
@@ -22,12 +23,14 @@ public class EnemyDamageControl : MonoBehaviour
     public UnityEvent OnBegin, OnDone, OnDead;
 
     //public GameObject bonePrefab;
+    public GameObject chickenPrefab;
 
     void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        Collider2D coll = GetComponent<Collider2D>();
     }
 
     public void ChangeHealth(int amount)
@@ -66,7 +69,12 @@ public class EnemyDamageControl : MonoBehaviour
         //Disable enemy
         //for(int i=0;i<5;i++)
         //    Instantiate(bonePrefab, rb2d.position, Quaternion.identity);
-
+        Destroy(coll);                  // Remove collider so item can drop down to floor
+        Destroy(rb2d);
+        if (Random.Range(1,8) == 1)     // 1 in 8 chance to drop item
+        {
+            Instantiate(chickenPrefab, transform.position, Quaternion.identity);
+        }
         OnDead?.Invoke();
     }
 

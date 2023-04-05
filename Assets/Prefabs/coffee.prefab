@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 0
+  HPPrefab: {fileID: 5622340231152697179, guid: 2b29fd75363710c44a54c7cc891990bc, type: 3}
 --- !u!114 &1180875078066181987
 MonoBehaviour:
   m_ObjectHideFlags: 0
